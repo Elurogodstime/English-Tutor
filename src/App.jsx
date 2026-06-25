@@ -18,9 +18,9 @@ import FormationIdoms from "./components/Idoms/FormationIdoms"
 
 
 import Quiz from './components/Quiz/quiz'
-import Reviews from "./components/Review/Review"
+import Reviews from "./components/Review/review"
 import Dashboard from "./components/Dashboard/Dashboard"
-import Welcome from "./components/Welcome/Welcome"
+import Welcome from "./components/Welcome/welcome"
 
 import Noun from './components/Parts of speech/Noun/Noun'
 import TypeOfNoun from './components/Parts of speech/Noun/TypesOfNoun'
@@ -40,7 +40,7 @@ import Functionverb from './components/Parts of speech/Verb/functionverb'
 
 /* ================= NEW PARTS OF SPEECH ================= */
 import Adverb from './components/Parts of speech/Adverb/Adverb'
-import TypeofAdverb from './components/Parts of speech/Adverb/TypeofAdverb'
+import TypeofAdverb from './components/Parts of speech/Adverb/TypeOfAdverb'
 import FormationAdverb from './components/Parts of speech/Adverb/FormationAdverb'
 import FuctionAdverb from './components/Parts of speech/Adverb/FunctionAdverb'
 
