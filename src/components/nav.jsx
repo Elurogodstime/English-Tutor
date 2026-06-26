@@ -18,9 +18,15 @@ function Nav() {
                     <FaBars />
                 </button>
 
-                <h1 className="text-xl font-bold text-white tracking-wide">
-                    English Tutor
-                </h1>
+                <div className="flex">
+                    <div className="s">
+                </div>
+                    <div className="ss"><h1 className="text-xl font-bold text-white tracking-wide">
+                  English Tutor
+                </h1></div>
+
+                
+                </div>
 
                 <div className="bg-blue-200 w-10 h-10 rounded-full flex items-center justify-center shadow">
                     <span className="text-blue-800 font-bold">U</span>
