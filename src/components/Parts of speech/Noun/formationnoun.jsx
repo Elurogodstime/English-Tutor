@@ -1,6 +1,6 @@
 import { Link } from "react-router-dom"
 import BackButton from "../../Backbutton"
-import EndButton from "../../EndButton"
+import EndButton from "../../Endbutton"
 import Tittle from "../../Tittle"
 
 function Formation() {

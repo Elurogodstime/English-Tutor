@@ -65,6 +65,9 @@ import TypeOfInterjection from './components/Parts of speech/Interjection/TypeOf
 import FunctionInterjection from './components/Parts of speech/Interjection/FunctionInterjection'
 import FormationInterjection from './components/Parts of speech/Interjection/FormationInterjection'
 
+
+
+
 function App() {
   return (
     <>

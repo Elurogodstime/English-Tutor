@@ -2,7 +2,7 @@ import { Link } from "react-router-dom"
 import NextButton from "../../Nextbutton"
 import BackButton from "../../Backbutton"
 import Tittle from "../../Tittle"
-import EndButton from "../../EndButton"
+import EndButton from "../../Endbutton"
 
 function FormationPronoun() {
     return (
