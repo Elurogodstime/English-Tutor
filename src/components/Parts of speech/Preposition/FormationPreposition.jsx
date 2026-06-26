@@ -1,6 +1,6 @@
 import { Link } from "react-router-dom"
 import BackButton from "../../Backbutton"
-import EndButton from "../../Endbutton"
+import EndButton from "../../EndButton"
 import Tittle from "../../Tittle"
 import Subtittle from "../../Subtittle"
 
