@@ -30,6 +30,12 @@ function Conjunction() {
 
             </div>
 
+             <div className="flex justify-center mt-10">
+                <Link to={"/types"}>
+                    <BackButton />
+                </Link>
+            </div>
+
             <div className="flex justify-center mt-10">
                 <Link to={"/typeofconjunction"}>
                     <NextButton />

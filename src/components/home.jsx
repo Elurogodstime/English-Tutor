@@ -40,7 +40,7 @@ function Home() {
                     </div>
                 </Link>
 
-                <Link to={"/reviews"}>
+                <Link to={"/review"}>
                     <div className="bg-purple-500 text-white p-5 rounded-xl shadow hover:scale-105 transition">
                         Reviews
                     </div>

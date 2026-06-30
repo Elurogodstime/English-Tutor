@@ -65,7 +65,7 @@ function Type() {
 
             {/* BACK BUTTON */}
             <div className="flex justify-center mt-8">
-                <Link to={"/"}>
+                <Link to={"/home"}>
                     <BackButton />
                 </Link>
             </div>

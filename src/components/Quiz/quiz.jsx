@@ -1,5 +1,6 @@
 import { useState, useEffect } from "react"
 import { Link, useNavigate } from "react-router-dom"
+import { FaArrowLeft } from "react-icons/fa"
 
 function Quiz() {
 
@@ -634,7 +635,16 @@ return (
     <div className="min-h-screen bg-gray-50 p-4">
 
         {/* HEADER */}
+         <Link to={"/home"}>
+         <div className="mb-2" >
+                <button className="flex items-center gap-2 bg-blue-100 text-blue-700 px-4 py-3 rounded-lg shadow active:scale-95 transition">
+                    <FaArrowLeft size={"10px"}/>
+                </button>
+            </div>
+         </Link>
         <div className="bg-white shadow rounded-xl p-4">
+
+           
 
             <div className="flex justify-between items-center">
 
