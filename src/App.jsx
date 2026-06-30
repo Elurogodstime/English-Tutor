@@ -5,6 +5,7 @@ import Footer from './components/footer'
 import { Route, Routes } from "react-router-dom"
 
 import Types from "./components/Parts of speech/Noun/TypesOfPartsOfSpeech"
+import Register from './components/Register/Register'
 
 import Figures from "./components/Figures of speech/figures"
 import TypesOfFigures from "./components/Figures of speech/TypesOfFigures"
@@ -76,8 +77,11 @@ function App() {
 
       <Routes>
 
+        {/* Register */}
+        <Route path='/' element={<Register />} />
+
         {/* Welcome */}
-        <Route path='/' element={<Welcome />} />
+        <Route path='/welcome' element={<Welcome />} />
 
             {/* Home */}
         <Route path='home' element={<Home />} />
@@ -86,7 +90,7 @@ function App() {
         <Route path='/quiz' element={<Quiz />} />
 
          {/*reviews */}
-        <Route path='/reviews' element={<Reviews />} />
+        <Route path='/review' element={<Reviews />} />
 
          
 
@@ -95,7 +99,7 @@ function App() {
 
         {/* FIGURES + IDIOMS */}
         <Route path='/figures' element={<Figures />} />
-        <Route path='/typeoffigures' element={<TypesOfFigures />} />
+        <Route path='/typesoffigures' element={<TypesOfFigures />} />
         <Route path='/functionfigures' element={<FunctionFigures />} />
         <Route path='/formationfigures' element={<FormationFigures />} />
 

@@ -1,10 +1,17 @@
 import { useState } from "react"
-import { FaHome, FaBookOpen, FaQuestionCircle, FaStar, FaTimes, FaBars,  } from "react-icons/fa"
+import { FaHome, FaBookOpen, FaQuestionCircle, FaStar, FaTimes, FaBars,  FaUserCircle } from "react-icons/fa"
 import { MdDashboard } from "react-icons/md";
 import {Link} from "react-router-dom"
 
 function Nav() {
     const [navShow, setNavShow] = useState(false)
+
+    const student =
+    JSON.parse(localStorage.getItem("student")) || null
+
+const initials = student
+    ? student.name.charAt(0).toUpperCase()
+    : "U"
 
     return (
         <>
@@ -13,7 +20,7 @@ function Nav() {
 
                 <button
                     onClick={() => setNavShow(true)}
-                    className="text-2xl text-amber-200"
+                    className="text-2xl text-blue-200"
                 >
                     <FaBars />
                 </button>
@@ -21,16 +28,27 @@ function Nav() {
                 <div className="flex">
                     <div className="s">
                 </div>
-                    <div className="ss"><h1 className="text-xl font-bold text-white tracking-wide">
+
+                    <div className="logotwo flex justify-center">
+                        <div><h1 className="text-xl font-bold text-white tracking-wide"><FaBookOpen/></h1></div>
+                         <div className="ss"><h1 className="text-xl font-bold text-white tracking-wide">
                   English Tutor
                 </h1></div>
 
                 
+                    </div>
+                   
+
+                
                 </div>
 
-                <div className="bg-blue-200 w-10 h-10 rounded-full flex items-center justify-center shadow">
-                    <span className="text-blue-800 font-bold">U</span>
-                </div>
+               <Link to={"/dashboard"}>
+               <div className="bg-blue-200 w-10 h-10 rounded-full flex items-center justify-center shadow cursor-pointer">
+    <span className="text-blue-800 font-bold">
+        {initials}
+    </span>
+</div>
+               </Link>
             </div>
 
             {/* OVERLAY */}
@@ -47,7 +65,29 @@ function Nav() {
 
                 {/* HEADER */}
                 <div className="flex items-center justify-between p-4 border-b border-blue-500">
-                    <h2 className="text-white font-bold text-lg">Menu</h2>
+
+                    
+    <div className="flex justify-between items-center p-4 border-b border-blue-500">
+
+    <div>
+
+      <h2 className="text-white font-bold text-lg">
+    {student ? student.name : "Guest"}
+</h2>
+
+        <p className="text-blue-200 text-sm">
+    English Learner
+</p>
+
+    </div>
+
+</div>
+
+
+
+
+
+
 
                     <button onClick={() => setNavShow(false)} className="text-white text-2xl">
                         <FaTimes />
@@ -55,6 +95,8 @@ function Nav() {
                 </div>
 
                 {/* LINKS */}
+
+                
                 <div className="p-4 space-y-3 text-white">
 
                      <Link to={"/dashboard"}>
@@ -64,7 +106,7 @@ function Nav() {
                     </div>
                     </Link>
 
-                    <Link to={"/"}>
+                    <Link to={"/home"}>
                     <div className="flex items-center gap-3 p-3 rounded-lg hover:bg-blue-500 transition cursor-pointer shadow">
                         <FaHome />
                         Home
@@ -85,7 +127,7 @@ function Nav() {
                     </div>
                     </Link>
 
-                    <Link to={"/reviews"}>
+                    <Link to={"/review"}>
                     <div className="flex items-center gap-3 p-3 rounded-lg hover:bg-blue-500 transition cursor-pointer shadow">
                         <FaStar />
                         Reviews

@@ -1,10 +1,17 @@
 import { Link } from "react-router-dom"
 
 function Dashboard() {
+
+    const student =
+    JSON.parse(localStorage.getItem("student")) || null
+
     return (
         <div className="min-h-screen bg-gray-50 p-4">
 
             {/* HEADER */}
+            <div className="bg-blue-50  p-2 m-2 rounded-2xl  flex justify-center place-center">
+                <p className="text-blue-500 font-light w-90   bg-blue-50 text-center">Welcome back {student.name}</p>
+            </div>
             <div className="bg-blue-700 text-white p-6 rounded-2xl shadow-md">
                 <h1 className="text-2xl font-bold">English Tutor App 📘</h1>
                 <p className="text-sm mt-1">
@@ -42,7 +49,7 @@ function Dashboard() {
                     </div>
                 </Link>
 
-                <Link to="/reviews" className="m-3">
+                <Link to="/review" className="m-3">
                     <div className="bg-gray-700 text-white p-4 rounded-xl shadow active:scale-95 transition">
                         📊 Review Mistakes (Coming Soon)
                     </div>
